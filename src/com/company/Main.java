@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 	    // write your code here
         readFile rd = new readFile();
-        String filename = "/iris.data.txt";
+        String filename = "./src/iris.data.txt";
         double[][] data = rd.read(filename);
         SimilarityDE sde = new SimilarityDE();
         double[][] adj = sde.getAdjMatrix(data);
